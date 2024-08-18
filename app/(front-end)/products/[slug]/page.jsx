@@ -44,9 +44,9 @@ export default async function ProductDetailPage({ params: { slug } }) {
           </div>
           <div className="flex items-center justify-between gap-4 pt-4 border-b border-gray-500 pb-4">
             <div className="flex items-center gap-4">
-              <h4 className="text-2xl">UGX{product.salePrice}</h4>
+              <h4 className="text-2xl">INR{product.salePrice}</h4>
               <del className="text-slate-400 text-sm">
-                UGX {product.productPrice}
+                INR {product.productPrice}
               </del>
             </div>
             <p className="flex items-center">
