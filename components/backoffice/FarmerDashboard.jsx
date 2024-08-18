@@ -15,7 +15,7 @@ export default async function FarmerDashboard() {
   const sales = await getData("sales");
   const salesById = sales.filter((sale) => sale.vendorId === id);
   const products = await getData("products");
-  const productsById = products.filter((product) => product.productId === id);
+  const productsById = products.filter((product) => product.userId === id);
   if (!status) {
     return (
       <div className="max-w-2xl mx-auto min-h-screen mt-8">
