@@ -16,22 +16,22 @@ export default function PriceFilter({ slug, isSearch }) {
   console.log(isSearch, search);
   const priceRanges = [
     {
-      display: "under 300",
-      max: 300,
+      display: "under 50",
+      max: 50,
     },
     {
-      display: "Between 300 and 500",
-      max: 500,
-      min: 300,
+      display: "Between 50 and 150",
+      max: 150,
+      min: 50,
     },
     {
-      display: "Between 500 and 700",
-      max: 700,
-      min: 500,
+      display: "Between 150 and 250",
+      max: 250,
+      min: 150,
     },
     {
-      display: "Above 700",
-      min: 700,
+      display: "Above 250",
+      min: 250,
     },
   ];
   const router = useRouter();
